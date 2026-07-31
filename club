@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anti-SocialMedia</title>
+    <style>
+        body {
+            background-image: url("https://a.storyblok.com/f/289689962598839/1200x660/f1b9e9a4e6/red-stop-doomscrolling-sign-with-a-crossed-out-phone-icon-on-a-blue-illustrated-background-with-dark-app-grid-silhouettes-symbolizing-social-media-limits-and-mental-health-awareness.webp/m/3840x0/filters:quality(75)");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 200% cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+          font-family: "Courier New";
+          font-size: 50px;
+          font-weight: 700;
+          line-height:;
+        }
+
+        .nav {
+
+
+        }
+
+        .page {
+            background-color: orange;
+            opacity-hover: 1.2;
+            display: grid;
+            grid-template-columns: 80px 80px 80px;
+            align-items: start;
+            justify-content: space-between;
+
+        }
+
+        .text1{
+            width: 200px;
+            padding: 70px;
+            margin: 100px;
+            background-color: rgba(255, 127, 0, 0.5);
+        }
+
+        .pagetext {
+          color: black;
+          font-family: impact;
+          width: 400px;
+          padding: 8px 10px;
+          margin: 12px 12px;
+        }
+
+        .article3 {
+          background-color:orange;
+          font-family: impact;
+          width: 400px;
+          padding:8px 10px;
+          margin:12px 12px;
+
+        }
+
+    </style>
+</head>
+    <body>
+        <main>
+            <div class= "text1">
+            <p>Please, do not hestitate to join this movement. Social Media is a powerful entity and needs to be handled with better care by the human population.</p>
+            </div>
+
+        </main>
+        <footer></footer>
+    </body>
+</html>
