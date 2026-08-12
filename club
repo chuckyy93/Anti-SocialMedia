@@ -29,6 +29,104 @@
               background-color: rgba(255, 127, 0, 0.38);
           }
 
+          .instantsearchbar {
+              position: relative;
+              max-width: 250px;
+          }
+
+          .instantsearchbar,
+          .instantsearchbar * {
+              transtion: background 0.15s, box-shadow 0.15s;
+          }
+
+          .instantsearchbar: focus-within {
+              box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          }
+
+          .instantsearchbar--loading::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2;
+            background: #009578;
+            border-radius: 5px;
+            animation: searchIndicator 0.5s infinite ease-in-out;
+          }
+
+          @keyframes searchIndicator {
+            0% { width: 15%}
+            50% { width: 100%}
+            100% { width: 15%}
+          }
+
+          .instantsearchbar,
+          .instantsearchbar__input-container {
+            border-radius: 8px;
+          }
+
+          .instantsearchbar,
+          .instantsearchbar__input-container {
+            border-radius: 7px;
+            display: inline-flex;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 8px;
+            background: #eeeeee;
+          }
+
+          .instantsearchbar__input-container:focus-within {
+              background: #ffffff;
+          }
+
+          .instantsearchbar__input {
+            flex-grow: 2;
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 0 6px;
+            background: transparent;
+          }
+
+          .instantsearchbar__results-container {
+            max-height: 250px;
+            overflow-y: auto;
+            transition: visibility 0.1s, opacity 0.1s;
+          }
+
+          .instantsearchbar__results-container--visible {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .instantseaerchbar__result {
+            display: block;
+            color: #333333;
+            text-decoration: none;
+            padding: 12px;
+            font-size: 1em;
+            cursor: pointer;
+          }
+
+          .instantsearchbar__result:hover {
+            background:#eeeeee;
+          }
+
+          .instantsearchbar__result: not(:last-of-type) {
+            border-bottom:2px solid #eeeeee;
+          }
+
+          .instantsearchbar__title {
+            font-size: 1.1em;
+            font-weight: bold;
+          }
+
+          .instantsearchbar__paragraph {
+            line-height: 1.5;
+            margin: 10px, 0px;
+
+          }
+
           #container {
               display: flex;
               background-color: rgba(255, 127, 0, 0.38);
@@ -43,8 +141,9 @@
             margin: 35px;
             width: 100%;
           }
-    
+      
 
+        
             #header {
               grid-area: header;
             }
@@ -176,6 +275,20 @@
             <h1>ANTI-SOCIALMEDIA </h1>
             <p>Please, do not hestitate to join this movement. Social Media is a powerful entity and needs to be handled with better care by the human population.</p>
             </div>
+          </div>
+          <div id="container">
+
+            <div>
+              <div id = "instantsearchbar">
+                <div class = "instantsearchbar__container"></div>
+                <div class = "instantsearchbar__results-container--visible"></div>
+              </div>
+            </div>
+            <div>
+            
+              <sript src="script.js" type="module">
+              </sript>
+              </div>
           </div>
 
           <div id="container">
