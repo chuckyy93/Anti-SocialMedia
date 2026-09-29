@@ -20,7 +20,7 @@
 
   
           .grid-container {
-              display: grid;
+              display: grid-container;
               position: center;
               padding: 300px;
               margin: 300px;
@@ -267,16 +267,17 @@
   <a href="https://www.stopbullying.gov/">Anti-Bullying</a>
   <a href="https://cooking.nytimes.com/">Cooking</a>
   <a href="https://www.edweek.org/">Education</a>
-  <a href="https://www.usajobs.gov/">Employment</a>
+  <a href="https://www.indeed.com/">Employment</a>
+  <a href="https://www.w3spaces-preview.com/astronomy2022/index.html">Space</a>
 </div>
 
         <div id="container">
           <div>
             <h1>ANTI-SOCIALMEDIA </h1>
-            <p>Please, do not hestitate to join this movement. Social Media is a powerful entity and needs to be handled with better care by the human population.</p>
+            <p>Please, do not hestitate to join this movement. Social Media is a powerful entity that needs to be handled with better care by the human population.</p>
             </div>
           </div>
-          <div id="container">
+          <div id="container
 
             <div>
               <div id = "instantsearchbar">
